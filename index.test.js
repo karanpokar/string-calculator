@@ -33,5 +33,11 @@ describe('add', () => {
 
   
 
+  it('should return 0 for non-numeric values', () => {
+    expect(add('1,abc,2')).toBe(3);
+  });
+
+  
+
  
 });
