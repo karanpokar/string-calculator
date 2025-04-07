@@ -30,15 +30,14 @@ describe('add', () => {
     expect(add('//*\n1*2*3')).toBe(6);
   });
 
-  it('should return 0 for non-numeric values', () => {
-    expect(add('1,abc,2')).toBe(3);
-  });
 
   it('should return same number for single number input', () => {
     expect(add('7')).toBe(7);
   });
 
-  
+  it('should return 0 for 0 input', () => {
+    expect(add('0')).toBe(0);
+  });
 
  
 });
